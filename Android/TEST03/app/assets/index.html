@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IG</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="wf-roundedmplus1c">USB環境センサー</h1>
+    </header>
+    <div id="display-area">
+        <section id="temperture">
+            <h2 class="icon">温度</h2>
+            <p class="wf-roundedmplus1c"><span class="value">25.3</span><span>&#8451;</span></p>
+        </section>
+        <section id="humid">
+            <h2 class="icon">湿度</h2>
+            <p class="wf-roundedmplus1c"><span class="value">29.1</span><span>%</span></p>
+        </section>
+        <section id="pressure">
+            <h2 class="icon">気圧</h2>
+            <p class="wf-roundedmplus1c"><span class="value">1024.5</span><span>hPa</span></p>
+        </section>
+    </div>
+
+    <center>
+        <br>
+        <section id="refresh">
+            <p class="wf-roundedmplus1c"><span class="value">2020/02/02 19:00:59</span></p>
+        </section>
+        <br>
+        <br>
+        <section id="status">
+            <h2><p class="value"></p></h2>
+        </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <img src="image/logo.png" alt="ArtifactNoise">
+    </center>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bme280.js"></script>
+</body>
+
+</html>

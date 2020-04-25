@@ -1,0 +1,170 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS RESET END */
+
+body {
+    font-size: 16px;
+    background: #eeeeee;
+}
+header{
+    background-color: #48C5F0;
+    width: 100%;
+    height: 5em;
+    text-align: center;
+}
+header h1{
+    font-size: 2em;
+    padding:0.5em 0;
+}
+#display-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#display-area section{
+    width: 300px;
+    height: 300px;
+    font-size: 3em;
+    margin:50px;
+    padding: 0;
+    text-align: center;
+    border-radius: 35px;
+    background: linear-gradient(145deg, #ffffff, #d6d6d6);
+    box-shadow:  13px 13px 26px #dddddd, 
+             -13px -13px 26px #ffffff;
+}
+
+#display-area section:hover{
+    filter: grayscale(50%);
+    margin: 55px 45px 45px 55px;
+    padding: 5px -5px -5px 5px;
+    border-radius: 55px;
+    background: #eaeaea;
+    box-shadow: inset 10px 10px 20px #dcdcdc, 
+            inset -10px -10px 20px #f8f8f8;
+}
+#display-area section .icon{
+    width: 50px;
+    height: 50px;
+    margin: 78px auto 50px;
+    transform: scale(1.5);
+}
+
+#refresh .icon{
+    width: 71px;
+    height: 71px;
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    background: #555555;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    position: absolute;
+    bottom: calc(100vh);
+}
+footer img{
+    display: block;
+    margin: 0 auto;
+    transform: scale(0.5);
+} 
+#status .icon{
+    text-indent: -9999px;
+    background: url("image/pressure.png");
+}
+#humid .icon{
+    text-indent: -9999px;
+    background: url("image/humid.png");
+}
+
+#temperture .icon{
+    text-indent: -9999px;
+    background: url("image/temperture.png");
+}
+
+#pressure .icon{
+    text-indent: -9999px;
+    background: url("image/pressure.png");
+}
+
+#refresh .icon{
+    text-indent: -9999px;
+    background: url("image/refresh.png");
+}
+#refresh .icon:hover{
+    animation: rotation 1s linear infinite;
+}
+
+.wf-roundedmplus1c { 
+    font-family: "M PLUS Rounded 1c";
+    font-weight: bold;
+}
+@keyframes rotation {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media screen and (max-width:460px){
+    #display-area section{
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        font-size: 1em;
+        margin:10px;
+    }
+    #display-area section .icon{
+        width: 50px;
+        height: 50px;
+        margin: 30px auto 10px;
+        transform: scale(0.5);
+    }
+}
