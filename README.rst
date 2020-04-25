@@ -37,7 +37,7 @@ USBドライバはHIDを使用しているため、専用のドライバーは�
 
 ・モジュールのType-C端子にケーブルを接続します。
 
-.. image:: ./img/01.png
+.. image:: ./img/setup/01.png
 
 ・LEDの点灯を確認します。
 
@@ -55,7 +55,7 @@ cd ./AN-BME280-IG/Python/example
 
 python3 BME280_test.py
 
-.. image:: ./img/02.JPG
+.. image:: ./img/setup/02.JPG
 
 
 ■ サンプルプログラム
