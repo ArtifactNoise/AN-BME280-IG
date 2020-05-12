@@ -11,7 +11,7 @@ buff = StringVar()
 buff.set('')
 
 Label(textvariable = buff).pack()
-from PyMCP2221A import BME280
+import BME280
 device = BME280.BME280()
 
 def show_time():
